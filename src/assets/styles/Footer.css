@@ -1,0 +1,99 @@
+:root {
+  --content-color: #000000;
+}
+
+.footer {
+}
+.footer-section {
+  padding-top: 79.5px;
+  padding-bottom: 79.5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f7f7f9;
+}
+.footer-shop {
+  width: 24%;
+}
+.shop-icons {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+}
+.shop-icons img {
+  width: 24px;
+  display: flex;
+}
+.p-head {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+
+.p-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin: 0;
+  padding-top: 14.5px;
+}
+
+.shop-text .customer-list div p {
+  font-weight: 400;
+  size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+}
+
+.list-p {
+  font-weight: 400;
+  size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.7px;
+}
+.list-p ul {
+  display: inline;
+  margin: 0;
+  padding: 0 0;
+}
+.list-p ul li {
+  line-height: 36px;
+}
+.join-form {
+  width: 100%;
+  padding-top: 20px;
+}
+.join-form input {
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 16.5px 65px 14.5px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  border: 1px solid black;
+  font-family: "Questrial", sans-serif;
+}
+.join-form button {
+  background-color: #ff9966;
+  padding: 16.5px 34px 14.5px 36px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  border: 0px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 14px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+  background-color: #efeff0;
+}
