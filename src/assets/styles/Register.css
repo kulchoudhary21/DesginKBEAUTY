@@ -1,11 +1,87 @@
-/* container for rigster page */
 .register-container {
-  padding: 62px 117px 18px 123px;
+  /* padding: 62px 117px 18px 123px; */
   margin: 0;
 }
 .register {
-  margin: 0;
-  padding: 139px 445px 239px 445px;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 120px 0px 220px 0px;
 }
+.register-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.register-heading h1 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 1.1px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.register-heading h5 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13.39px;
+  letter-spacing: 1.1px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 27px;
+}
+
 .register-form {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0;
+  padding-top: 50px;
+}
+
+.register-form form input {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  margin: 28px 0 0 0;
+  /* align-items: center; */
+  padding-top: 17px;
+  /* padding-right: 380.2px; */
+  padding-bottom: 17px;
+  width: 100%;
+  padding-left: 12px;
+  color: #000000;
+  border: 1px solid #e2e2e2;
+}
+.firstname {
+  margin: 0 !important;
+}
+.register-form form button {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+  padding-top: 21px;
+  /* padding-right: 200px; */
+  padding-bottom: 17px;
+  /* padding-left: 200px; */
+  color: #ffffff;
+  border: 1px solid #e2e2e2;
+  background-color: #ff9966;
+  width: 100%;
+  margin: 28px 0 0 0;
+}
+.register-form form p {
+  margin: 0;
+  padding-top: 10px;
+  color: red;
+}
+input:focus {
+  border: 1px solid #ff9966;
 }

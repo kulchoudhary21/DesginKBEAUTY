@@ -2,7 +2,8 @@ import { lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
 
 const MainLayout = lazy(() => import("./layouts/MainLayout"));
-const Register = lazy(() => import("./component/Register"));
+const Register = lazy(() => import("./pages/Register"));
+const Home = lazy(() => import("./pages/Home"));
 function App() {
   return useRoutes([
     {
@@ -14,6 +15,15 @@ function App() {
       ),
       children: [
         {
+          index: true,
+          element: (
+            <Suspense fallback={<>Loading.. </>}>
+              <Home />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/register",
           index: true,
           element: (
             <Suspense fallback={<>Loading.. </>}>

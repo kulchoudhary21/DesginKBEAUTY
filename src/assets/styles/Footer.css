@@ -2,15 +2,15 @@
   --content-color: #000000;
 }
 
-.footer {
+.footer-container {
+  background-color: #f7f7f9;
 }
 .footer-section {
   padding-top: 79.5px;
   padding-bottom: 79.5px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #f7f7f9;
+  justify-content: space-between;
 }
 .footer-shop {
   width: 24%;

@@ -1,7 +1,14 @@
 import "../assets/styles/Header.css";
 import icon1 from "../../public/images/icon1.svg";
 import IconsHeader from "../block/IconsHeader";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 const Header = () => {
+  const [isChange, setIsChange] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === "/") setIsChange(true);
+  }, [pathname]);
   return (
     <div className="header">
       <div className="sub-header">
@@ -19,10 +26,11 @@ const Header = () => {
         </div>
 
         <div className="bottom-header">
-          <div className="list">
+          <div className={isChange ? "list-home" : "list"}>
             <ul>
               <li>SHOP ALL</li>
-              <li>NEW BRANDS</li>
+              <li>NEW</li>
+              <li>BRANDS</li>
               <li>VALUE SETS</li>
               <li>BLOG</li>
             </ul>
