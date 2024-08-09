@@ -1,0 +1,34 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.center-productpage {
+  display: flex;
+  justify-content: end;
+}
+.slick-dots {
+  /* position: absolute; */
+  top: 0;
+  border: 1px solid;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 9%;
+  height: 39%;
+}
+.slick-dots li {
+  width: auto;
+  height: auto;
+}
+
+.center-productpage {
+  display: flex !important;
+  justify-content: end;
+}
+
+.right-productpage a img {
+  border: 1px solid;
+  width: 94px;
+}

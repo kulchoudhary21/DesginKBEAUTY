@@ -4,6 +4,7 @@ import { useRoutes } from "react-router-dom";
 const MainLayout = lazy(() => import("./layouts/MainLayout"));
 const Register = lazy(() => import("./pages/Register"));
 const Home = lazy(() => import("./pages/Home"));
+const ProductPage = lazy(() => import("./pages/ProductPage"));
 function App() {
   return useRoutes([
     {
@@ -28,6 +29,15 @@ function App() {
           element: (
             <Suspense fallback={<>Loading.. </>}>
               <Register />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/product-page",
+          index: true,
+          element: (
+            <Suspense fallback={<>Loading.. </>}>
+              <ProductPage />
             </Suspense>
           ),
         },

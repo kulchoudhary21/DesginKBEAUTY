@@ -1,7 +1,11 @@
 :root {
   --content-color: #000000;
 }
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
 .footer-container {
   background-color: #f7f7f9;
 }

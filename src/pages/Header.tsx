@@ -10,7 +10,7 @@ const Header = () => {
     if (pathname === "/") setIsChange(true);
   }, [pathname]);
   return (
-    <div className="header">
+    <div className={isChange ? "header-home" : "header"}>
       <div className="sub-header">
         <p>FREE, FAST SHIPPING FOR ALL UAE ORDERS OVER AED 100</p>
       </div>
