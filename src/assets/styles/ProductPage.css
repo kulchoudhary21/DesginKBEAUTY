@@ -52,6 +52,7 @@
 
 .rating {
   display: flex;
+  justify-content: start !important;
   padding-top: 10px;
 }
 .rating p {
@@ -90,7 +91,7 @@
 .box1 {
   margin-top: 37px;
   border: 1px solid #e2e2e2;
-  width: 25%;
+  width: 37%;
 }
 .count-add-minus {
   font-weight: 400;
@@ -269,7 +270,7 @@
 }
 
 .faq-heading {
-  padding: 18px 2px;
+  padding: 12px 2px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -309,5 +310,9 @@
 
 /* YOU MAY ALSO LIKE PAGE */
 .You-may-section {
+  padding-bottom: 26px;
+}
+/* RECENTLY VIEWED PRODUCTS PAGE */
+.recently-viewed-section {
   padding-bottom: 26px;
 }

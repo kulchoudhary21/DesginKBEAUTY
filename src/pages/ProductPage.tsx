@@ -84,11 +84,11 @@ const ProductPage = () => {
                 <div className="box1">
                   <div className="count-add-minus">
                     <div className="minus">
-                      <FontAwesomeIcon icon={faPlus} />
+                      <FontAwesomeIcon icon={faMinus} />
                     </div>
                     <div className="count">1</div>
                     <div className="add">
-                      <FontAwesomeIcon icon={faMinus} />
+                      <FontAwesomeIcon icon={faPlus} />
                     </div>
                   </div>
                 </div>
