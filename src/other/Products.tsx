@@ -81,3 +81,19 @@ const Products: Product[] = [
   },
 ];
 export default Products;
+
+//FAQ'S
+export const FAQS = [
+  {
+    title: "HOW TO USE",
+    content: "Content for Accordion Item 1",
+  },
+  {
+    title: "INGREDIENTS",
+    content: "Content for Accordion Item 2",
+  },
+  {
+    title: "REVIEWS (13)",
+    content: "Content for Accordion Item 3",
+  },
+];

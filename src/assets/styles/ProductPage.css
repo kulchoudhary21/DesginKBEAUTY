@@ -1,34 +1,313 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  /* width: 100%; */
+}
+.parent-contaner {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  column-gap: 65px;
+  padding: 62px 0;
+}
+.left {
+  width: 10%;
+}
+.center {
+  width: 45%;
+}
+.center-productpage {
+  /* padding-left: 44px; */
+}
+.right {
+  width: 45%;
+  padding: 0;
+}
+.right-productpage a img {
+  width: 60%;
+}
+.slick-dots {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 1px;
+  left: -29%;
+  width: 20%;
+  /* height: auto; */
+}
+.slick-dots li {
+  width: 100%;
+  height: auto;
+}
+.rating-star {
+  color: lightgray; /* Unfilled star color */
 }
 
-.center-productpage {
+.rating-star.filled {
+  color: #ff9966; /* Filled star color */
+}
+
+.rating {
+  display: flex;
+  padding-top: 10px;
+}
+.rating p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  padding-left: 10px;
+  /* padding-top: 10px; */
+  margin: 0;
+}
+.group1 h4 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.75px;
+  padding-top: 1px;
+  margin: 0;
+}
+.group1 h2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1.1px;
+  padding-top: 19px;
+  margin: 0;
+}
+.price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 1.1px;
+  padding-top: 12px;
+  margin: 0;
+}
+.box1 {
+  margin-top: 37px;
+  border: 1px solid #e2e2e2;
+  width: 25%;
+}
+.count-add-minus {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  /* padding-top: 12px; */
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  /* width: 11%; */
+  padding: 16px 13px;
+}
+.count-add-minus div {
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group3 {
+  border: 1px solid #e2e2e2;
+  margin-top: 21px;
+}
+.add-to-cart {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.add-to-cart button {
+  border: 0;
+  background-color: white;
+}
+.add-to-cart button pre {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+  padding: 17px 112px;
+  display: flex;
+  justify-content: center;
+}
+.group4 {
+  border: 1px solid #e2e2e2;
+  margin-top: 21px;
+  background-color: #ff9966;
+}
+.but-it-now {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.but-it-now button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+  padding: 17px 112px;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  background-color: #ff9966;
+  color: white;
+}
+.group5 {
+  display: flex;
+  padding-top: 21px;
+  column-gap: 16px;
+}
+.fav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+
+.upper {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 32px;
+}
+.lower {
+  padding-top: 19px;
+}
+.group6 {
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 19px;
+}
+.list1 {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  background-color: #effffa;
+  position: relative;
+  padding: 0;
+}
+
+.group7 {
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 7px;
+}
+.list2 {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  background-color: #ffebf7;
+
+  position: relative;
+}
+.parcel-text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  margin: 0;
+  left: 71px;
+}
+.parcel-box {
+  width: 15%;
+}
+.parcel-box img {
+  width: 50%;
+}
+.parcel-box-plane {
+  display: flex;
+  justify-content: end;
+  width: 15%;
+}
+.parcel-box-plane img {
+  width: 50%;
+}
+/* Product details */
+.product-details h1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 1.1px;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 13px;
+}
+.product-details h6 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  padding-bottom: 21px;
+}
+/* Product FAQS  */
+.product-head {
+  border-bottom: 1px solid #e2e2e2;
+}
+.product-head h1 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.product-faqs {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.faq-heading {
+  padding: 18px 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-heading h4 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  padding: 18px 2px;
+  width: 90%;
+}
+.plus-icon {
+  width: 10%;
   display: flex;
   justify-content: end;
 }
-.slick-dots {
-  /* position: absolute; */
-  top: 0;
-  border: 1px solid;
-  display: flex !important;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 9%;
-  height: 39%;
+.faq-desc-hide {
+  display: none;
 }
-.slick-dots li {
-  width: auto;
-  height: auto;
+.faq-desc h4 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  padding: 0px 2px 18px 2px;
+}
+/* Mid hr line */
+
+.mid-line hr {
+  border: none;
+  height: 1px; /* You can adjust the height */
+  background-color: #d9d9d9;
 }
 
-.center-productpage {
-  display: flex !important;
-  justify-content: end;
-}
-
-.right-productpage a img {
-  border: 1px solid;
-  width: 94px;
+/* YOU MAY ALSO LIKE PAGE */
+.You-may-section {
+  padding-bottom: 26px;
 }

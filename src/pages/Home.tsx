@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import "../assets/styles/Home.css";
 import "../component/HomeAboutSection";
+import Products from "../other/Products";
 const HomeAboutSection = lazy(() => import("../component/HomeAboutSection"));
 const HomeBestSeller = lazy(() => import("../component/HomeBestSeller"));
 const HomeReadNow = lazy(() => import("../component/HomeReadNow"));
@@ -33,7 +34,11 @@ const Home = () => {
       </div>
       <div className="home-seller-section">
         <div className="container">
-          <HomeBestSeller />
+          <HomeBestSeller
+            data={Products}
+            heading={"BEST SELLERS"}
+            buttonHide={true}
+          />
         </div>
       </div>
       <div className="home-read-now">

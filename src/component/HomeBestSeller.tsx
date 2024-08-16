@@ -1,6 +1,4 @@
 import { Rating, RatingStar as OriginalRatingStar } from "flowbite-react";
-import { useState } from "react";
-import Products from "../other/Products";
 const RatingStar = ({ filled }) => {
   return (
     <OriginalRatingStar
@@ -9,12 +7,11 @@ const RatingStar = ({ filled }) => {
     />
   );
 };
-const HomeBestSeller = () => {
-  const [data, setdata] = useState(Products);
+const HomeBestSeller = ({ data, heading, buttonHide }) => {
   return (
     <div className="best-seller">
       <div className="bs-section">
-        <h3>BEST SELLERS</h3>
+        <h3>{heading}</h3>
         <div className="card-section">
           {data &&
             data?.map((item, index) => (
@@ -39,9 +36,11 @@ const HomeBestSeller = () => {
               </div>
             ))}
         </div>
-        <div className="product-button">
-          <button>VIEW ALL PRODUCTS</button>
-        </div>
+        {buttonHide && (
+          <div className="product-button">
+            <button>VIEW ALL PRODUCTS</button>
+          </div>
+        )}
       </div>
     </div>
   );

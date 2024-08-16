@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Pract: React.FC = () => {
+  const [data, setData] = useState();
   return (
     <div>
       <div data-testid="box1" role="box" className="box1 box">
